@@ -63,8 +63,9 @@ then call a function
 ```bash
 average_temperatures()
 ```
+that will bring the average, maximum and minimum temperatures per day and city. 
 
-that will bring the average, maximum and minimum temperatures per day and city and then the calls to consult the previously calculated data and print them on the console.
+There are also calls to query previously calculated data and print it to the console.
 
 remember that this example lacks exposing a service that allows you to query this externally.
 
