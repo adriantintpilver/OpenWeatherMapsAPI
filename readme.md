@@ -34,7 +34,7 @@ You can also configure which world cities you want to consult in the "locations"
 locations = ["London", "Paris", "New York", "Tokyo", "Sydney", "Rio de Janeiro", "Mumbai", "Shanghai", "Moscow", "Cape Town"]
 ```
 # Clarification on how this application runs 
-This application runs once when called and returns the results in the docker log, and must be called again if you want to call it again.
+This application runs once when called and returns the results in the console log, and must be called again if you want to call it again
 
 For real use it would be necessary to include a query api service that receives the cities and returns the results, which can be easily added with flask but was not requested, so this is just an example.
 
