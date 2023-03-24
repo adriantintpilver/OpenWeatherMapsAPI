@@ -41,11 +41,33 @@ For real use it would be necessary to include a query api service that receives 
 ## File structure
 Inside the src folder, we find:
 
-In functions.py we find the used to query the openweathermap.org api, create the tables, save the data in Sqlite, clean the data, get the required results and save these results in the database..
+In functions.py we find the used to query the openweathermap.org api, create the tables, save the data in Sqlite, clean the data, get the required results and save these results in the database.
 
 In the file accessdata.py we have all the sqlite db queries
 
 In the config.py file, API_KEY for openweathermap.org is set
+
+in the app.py file the cities are configured and then we have the calls to the functions
+```bash
+store_forecast_data(locations)
+```
+which will go to fetch the results at openweathermap.org 
+
+then call a function
+```bash
+high_temperatures()
+```
+that will obtain the highest temperatures per month and per city
+
+then call a function
+```bash
+average_temperatures()
+```
+
+that will bring the average, maximum and minimum temperatures per day and city and then the calls to consult the previously calculated data and print them on the console.
+
+remember that this example lacks exposing a service that allows you to query this externally.
+
 
 
 
